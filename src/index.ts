@@ -1,7 +1,7 @@
 // Core components
 export { Email } from "./components/Email";
-export { Section } from "./components/Section";
-export { Text } from "./components/Text";
+export { Section, SectionHeader, SectionFooter } from "./components/Section";
+export { Text, Heading, Link } from "./components/Text";
 export { Button } from "./components/Button";
 export { Image } from "./components/Image";
 export { Divider } from "./components/Divider";
