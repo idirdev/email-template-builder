@@ -127,3 +127,32 @@ renderEmail(<MyEmail />, {
 ## License
 
 MIT
+
+---
+
+## Français
+
+**email-template-builder** est un constructeur de templates d'e-mails basé sur React qui génère du HTML compatible avec tous les clients e-mail majeurs, y compris Outlook. Il utilise des mises en page à base de tableaux, des replis VML pour les boutons sous Outlook, et inclut des templates prêts à l'emploi (e-mail de bienvenue, reçu de commande).
+
+### Installation
+
+```bash
+npm install email-template-builder
+```
+
+### Utilisation
+
+```tsx
+import { Email, Section, Text, Button, renderEmail } from 'email-template-builder';
+
+const MonEmail = () => (
+  <Email title="Bonjour" preheader="Texte de prévisualisation">
+    <Section>
+      <Text fontSize={24} fontWeight="bold">Bonjour !</Text>
+      <Button href="https://example.com" backgroundColor="#3b82f6">Cliquer ici</Button>
+    </Section>
+  </Email>
+);
+
+const html = renderEmail(<MonEmail />);
+```
